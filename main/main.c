@@ -1,7 +1,4 @@
 #include "mpr121.h"
-#include <esp_log.h>
-#include <driver/gpio.h>
-#include <freertos/semphr.h>
 
 // -------------------------- 硬件参数配置（集中管理，方便移植） --------------------------
 #define I2C_MASTER_NUM I2C_NUM_0            // I2C端口号

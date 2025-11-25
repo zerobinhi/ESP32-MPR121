@@ -5,8 +5,11 @@
 #include <esp_err.h>
 #include <esp_check.h>
 #include <stdint.h>
+#include <driver/gpio.h>
 #include <driver/i2c_master.h>
 #include <freertos/FreeRTOS.h>
+#include <freertos/semphr.h>
+#include <freertos/task.h>
 
 // -------------------------- 可配置参数（集中管理，方便修改） --------------------------
 #define MPR121_DEFAULT_ADDR 0x5A // 默认I2C地址（ADD引脚接地）
